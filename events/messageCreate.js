@@ -1,8 +1,8 @@
 module.exports = {
 	name: 'messageCreate',
 	once: false,
-	execute(message) {
+	async execute(message) {
 		if (message.content === "ping")
-			message.reply("pong");
+			await message.reply("pong");
 	},
 };
